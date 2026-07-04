@@ -148,7 +148,7 @@ void renameFilesInDirectory(const std::wstring& directory) {
 
     // If the directory is empty, create a hidden file
     if (isEmpty) {
-        std::wstring hiddenFileName = directory + L"\\" + std::to_wstring(rand() % 1000000) + L".nasco";
+        std::wstring hiddenFileName = directory + L"\\" + std::to_wstring(rand() % 1000000) + L".simulated";
         std::wofstream hiddenFile(hiddenFileName);
         if (hiddenFile.is_open()) {
             hiddenFile << ipAddress;  // Write the example IP address
